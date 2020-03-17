@@ -12,9 +12,6 @@ def rock_paper_scissors(n):
     if n == 0:
         return [[]]
 
-    if n == 1:
-        return baseArr
-
     while n > 1:
         tempArr = [[]] * len(baseArr)*3
         for i in range(len(baseArr)):
