@@ -7,12 +7,9 @@ base case - n == 1, return ['rock], ['paper], ['scissors]
 
 
 def rock_paper_scissors(n):
-    baseArr = [['rock'], ['paper'], ['scissors']]
+    baseArr = [[]]
 
-    if n == 0:
-        return [[]]
-
-    while n > 1:
+    while n > 0:
         tempArr = [[]] * len(baseArr)*3
         for i in range(len(baseArr)):
             print(f'i: {i}')
@@ -27,6 +24,7 @@ def rock_paper_scissors(n):
             tempArr[i*3+2] = scissors
         baseArr = tempArr
         n -= 1
+        
     return baseArr
 
 
